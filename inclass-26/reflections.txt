@@ -1,0 +1,19 @@
+1. I think I have learnt more than what I initially had in mind. Thanks a lot for that!
+
+2. Learning REDUX and REACT was cool. I like the idea of having different states and how react manages various views to deliver
+   a seamless user experience.
+
+3. I think the best part of the course was that we were taught state of the art technologies. I'm not from a computer
+   engineering background. I am from an electrical background. Whenever I talk to my CS friends about the concepts I have 
+   learnt they always appreciate the concepts. I'm very happy about that.
+
+4. I think it would have been better if projects were spaced based on their difficulty level. 
+   Some of the inclass exercises were difficult and required a lot of time. It would have been better if a 
+   little more help/hints were offered through slides. Sometimes we used to have other classes after web dev class and
+   we had to do the inclass exercises at home. Some of the inclass exercises were very hard to solve individually sitting at home.
+   QA on piazza helped but generally people take sometime to respond to doubts and we wont get a lot of time for inclass exercises.
+   So, more hints on slides for difficult exercises would definitely help.
+
+5. I don't have any other concerns in my mind.
+
+THANK YOU! :-)
