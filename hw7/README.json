@@ -1,0 +1,5 @@
+{ 
+     "netid": "eb29",
+  "frontend": "http://studybuddy7.surge.sh",
+   "backend": "http://studybuddy7.herokuapp.com"
+}
