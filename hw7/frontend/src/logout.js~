@@ -1,0 +1,11 @@
+export const authenticateLogin=function() 
+{
+    
+    alert("User logged out");
+
+   return{
+    type: "LANDING_PAGE",
+    paylaod:""
+   }
+};
+
