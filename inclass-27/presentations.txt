@@ -1,0 +1,8 @@
+1. I liked the presentation "Hybrid Mobile Apps" the most. The presntation was laid out in a concise manner and
+was delivered in a crisp way. I could clearly understand the content that was delivered.
+
+2. I learnt about Reflect. I learnt how to add data visualization to websites using react and how it helps in
+e-marketing.
+
+3. I liked the talk on "Progressive Web Apps" the most beacuse I think the presentation was neat, the delivery was fluid
+and understandable and the content was good. 
