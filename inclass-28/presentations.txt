@@ -1,0 +1,8 @@
+1. I liked the presentation "Vue.js" the most. The presntation was 
+was delivered clearly. I could easily understand the content that was delivered.
+
+2. I learnt about GraphQL. I learnt how GraphQL is different from Express which we was used for course work. I learnt that
+GraphQL can be simpler to use compared to Express in certain situations.
+
+3. I liked the talk on "WebRTC" the most beacuse I think the presentation was neat, the delivery was fluid
+and understandable and the content was good. 
