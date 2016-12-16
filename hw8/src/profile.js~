@@ -1,0 +1,154 @@
+database.headlines:[
+          {
+          username: 'Kakorat',
+          headline: 'Kakorat is always ahead of Vageta'
+          },
+          {
+          username: 'Whis',
+          headline: 'Whis is always calm'
+          },
+          {
+          username: 'Beerus',
+          headline: 'DBZ rocks'
+          }];
+
+
+const getHeadline = (req, res) =>
+{
+  console.log(req.payload);
+  res.send(database.headlines)
+}
+
+const putHeadline = (req, res) =>
+{
+
+res.send(
+        {headlines:[
+        {
+         username: 'Goku',
+         headline: req.body.headline || ' you did not supply it'
+        }]})
+}
+
+
+
+
+const getEmail = (req, res) =>
+{
+  
+  res.send(
+          {headlines:[
+          {
+          username: 'Kakorat',
+          email: 'abc@gmail.com'
+          },
+          {
+          username: 'Whis',
+          email: 'def@gmail.com'
+          },
+          {
+          username: 'Beerus',
+          email: 'ghi@gmail.com'
+          }]})
+
+
+}
+
+const putEmail = (req, res) =>
+{
+
+res.send(
+        {headlines:[
+        {
+         username: 'Goku',
+         email: req.body.email || ' you did not supply it'
+        }]})
+}
+
+
+
+const getZipcode = (req, res) =>
+{
+  
+  res.send(
+          {headlines:[
+          {
+          username: 'Kakorat',
+          zipcode: '77001'
+          },
+          {
+          username: 'Whis',
+          zipcode: '77002'
+          },
+          {
+          username: 'Beerus',
+          zipcode: '77003'
+          }]})
+
+
+}
+
+const putZipcode = (req, res) =>
+{
+
+res.send(
+        {headlines:[
+        {
+         username: 'Goku',
+         zipcode: req.body.zipcode || ' you did not supply it'
+        }]})
+}
+
+
+
+
+const getAvatars = (req, res) =>
+{
+  
+  res.send(
+          {headlines:[
+          {
+          username: 'Kakorat',
+          avatar: 'http://farikogaming.com/profile/image/profile_image/35151/xxlarge/_v=1434925366'
+          },
+          {
+          username: 'Whis',
+          avatar: 'http://vignette3.wikia.nocookie.net/dragonball/images/1/18/Whisinfo.png/revision/latest?cb=20160807084658'
+          },
+          {
+          username: 'Beerus',
+          avatar: 'http://vignette1.wikia.nocookie.net/dragonball/images/7/7d/Cvvcvcvvvvv.jpg/revision/latest?cb=20160423050835'
+          }]})
+
+
+}
+
+const putAvatar = (req, res) =>
+{
+
+res.send(
+        {headlines:[
+        {
+         username: 'Goku',
+         avatar: req.body.avatar || ' you did not supply it'
+        }]})
+}
+
+
+
+module.exports = app => 
+{
+   
+     app.get('/headlines/:user?',getHeadline)
+     app.put('/headline',putHeadline)
+
+     app.get('/email/:user?',getEmail)
+     app.put('/email',putEmail)
+
+     app.get('/zipcode/:user?',getZipcode)
+     app.put('/zipcode',putZipcode)
+
+     app.get('/avatars/:user?',getAvatars)
+     app.put('/avatar',putAvatar)
+     
+}
