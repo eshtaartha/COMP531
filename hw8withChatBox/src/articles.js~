@@ -1,0 +1,72 @@
+const express = require('express')
+const bodyParser = require('body-parser')
+
+const hello = (req, res) => res.send({ hello: 'world' })
+
+const addArticle = (req, res) => {
+     console.log('Payload received', req.body)
+
+     articleId++;
+      
+     database.articles.push(
+     {
+     id:articleId,
+     author:"Piccolo",
+     text:req.body.body
+     }) // add id and other parameters to article body and append it to array
+     
+     res.send(database.articles[articleId]) //return article with id and author
+     
+}
+
+
+
+const sendBackArticles = (req, res) => 
+{
+
+id = req.params.id;
+
+idFound = database.find((data) =>
+{
+if(data.id ==id)
+{
+ res.send({articles:[
+{
+id:data.id,
+author:data.author,
+text:data.text
+}]})
+}
+
+
+if(!(idFound))
+{
+ res.send({articles:[
+{
+id:database[0].id,
+author:database[0].author,
+text:database[0].text
+},
+{
+id:database[1].id,
+author:database[1].author,
+text:database[1].text
+},
+{
+id:database[2].id,
+author:database[2].author,
+text:database[2].text
+}
+]}); //respond with 3 articles
+}
+
+}
+
+module.exports = app => 
+{
+app.post('/article', addArticle)
+app.get('/', hello)
+app.get('/articles/:id?',sendBackArticles) 
+}
+
+

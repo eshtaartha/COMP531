@@ -1,0 +1,24 @@
+
+const express = require('express')
+var http = require('http').Server(express);
+var io = require('socket.io')(http);
+
+
+const sendChatBox = (req, res) =>
+{
+  
+    res.sendfile('chatbox.html');
+
+}
+
+
+
+
+
+
+module.exports = app => 
+{
+   
+     app.get('/chatbox', sendChatBox);
+      
+}

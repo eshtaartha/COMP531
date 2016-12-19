@@ -1,0 +1,47 @@
+const express = require('express')
+const bodyParser = require('body-parser')
+
+const md5 = require('md5')
+
+database = [
+{
+id:1,
+author:"Goku",
+headline: 'Kakorat is always ahead of Vageta',
+text:"This is my first article",
+email: 'abc@gmail.com',
+zipcode: '77001'
+},
+{
+id:2,
+author:"Vageta",
+headline: 'Whis is always calm',
+text:"This is my second article",
+email: 'def@gmail.com',
+zipcode: '77002'
+},
+{
+id:3,
+author:"MajinBuu",
+headline: 'DBZ rocks',
+text:"This is my third article",
+email: 'ghi@gmail.com',
+zipcode: '77003'
+}];
+
+articleId=3;
+
+status=0;
+
+const app = express()
+app.use(bodyParser.json())
+require('./src/profile')(app)
+require('./src/articles')(app)
+
+
+// Get the port from the environment, i.e., Heroku sets it
+const port = process.env.PORT || 3000
+const server = app.listen(port, () => {
+     const addr = server.address()
+     console.log(`Server listening at http://${addr.address}:${addr.port}`)
+})
